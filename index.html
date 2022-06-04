@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikal Tec</title>
+</head>
+<body>
+    <style type="text/css">
+        body{
+            margin:auto;
+            text-align:center;
+            background:linear-gradient(180deg, rgb(41, 253, 41), white);
+            background-repeat:no-repeat;
+            font-family:'Courier New', Courier, monospace;
+            font-size:large
+        }
+        input{
+            border-style:none;
+            min-width:200px;
+            min-height:90px;
+            margin-buttom:30px;
+        }
+        #hexdiv{
+            background-color:white;
+            min-height:40px;
+            max-width:200px;
+            border-style:solid;
+            margin:auto;
+            text-align:center;
+            margin-top:30px;
+        }
+    </style>
+<h1>Colour Picker</h1>
+<h4>Select Colour Below</h4>
+<input type="Color" id="color" oninput="color()">
+
+
+
+    <div id="hexdiv">
+        <h3>Hex Code</h3>
+    </div>
+
+<script type="text/javascript">
+    // Declaring Variables//
+    let input = document.getElementById("color");
+    let colordiv = document.getElementById("colourdiv");
+    let hexdiv = document.getElementById("hexdiv");
+
+    function color(){
+        hexdiv.innerHTML = input.value;
+    };
+
+</script>
+</body>
+</html>
